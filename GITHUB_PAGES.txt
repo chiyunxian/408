@@ -1,3 +1,4 @@
 ﻿# 408 真题选择题典
 
-在线访问：https://chiyunxian.github.io/408-exam-quiz/
+在线访问：https://chiyunxian.github.io/408/
+
