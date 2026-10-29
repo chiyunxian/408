@@ -1,0 +1,113 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>408 真题选择题典 · 2009—2026</title>
+<meta name="description" content="2009—2026 年 408 计算机学科专业基础选择题，共 720 道。按数据结构、计算机组成原理、操作系统、计算机网络四本教材的章节与知识点整理，支持检索与对答案。">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<svg class="svg-sprite" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4.5 4.5"></path></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"></path></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"></path></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"></path><path d="M4 5.5v16"></path></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"></path><path d="m3 12 9 5 9-5"></path><path d="m3 16 9 5 9-5"></path></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5"></path><path d="M12 8h.01"></path></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></symbol>
+  <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 4v6h6"></path><path d="M20 20v-6h-6"></path><path d="M5.5 15A7.5 7.5 0 0 0 19 12"></path><path d="M18.5 9A7.5 7.5 0 0 0 5 12"></path></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3Z"></path><path d="m19 16 .7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16Z"></path></symbol>
+</svg>
+
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar" aria-label="章节导航">
+    <div class="side-brand">
+      <a class="brand" href="#/bank" aria-label="返回题库首页">
+        <span class="brand-mark">408</span>
+        <span class="brand-text"><strong>真题选择题典</strong><small>2009—2026</small></span>
+      </a>
+      <button class="icon-btn side-close" id="sideClose" aria-label="关闭导航"><svg class="icon"><use href="#i-close"></use></svg></button>
+    </div>
+
+    <div class="side-scroll">
+      <div class="side-label">按教材与章节浏览</div>
+      <nav id="sideBooks" class="side-books"></nav>
+      <div class="side-tip">
+        <span class="tip-mark"><svg class="icon"><use href="#i-spark"></use></svg></span>
+        <p>先选一本书，再点章节。每道题都标注了一个主知识点，可继续按知识点筛选。</p>
+      </div>
+    </div>
+
+    <div class="side-foot">
+      <span>720 道选择题</span>
+      <span class="dot-sep"></span>
+      <span>18 年真题</span>
+    </div>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="打开章节导航"><svg class="icon"><use href="#i-menu"></use></svg></button>
+      <nav class="topnav" id="topnav" aria-label="主导航">
+        <button data-view="bank" class="is-active" aria-label="题库"><svg class="icon"><use href="#i-book"></use></svg><span>题库</span></button>
+        <button data-view="chapters" aria-label="章节"><svg class="icon"><use href="#i-grid"></use></svg><span>章节</span></button>
+        <button data-view="points" aria-label="知识点"><svg class="icon"><use href="#i-layers"></use></svg><span>知识点</span></button>
+        <button data-view="about" aria-label="说明"><svg class="icon"><use href="#i-info"></use></svg><span>说明</span></button>
+      </nav>
+      <div class="topbar-meta">
+        <span class="topbar-badge"><i></i>本地题库</span>
+        <span class="topbar-version">v1.0</span>
+      </div>
+    </header>
+
+    <section class="toolbar" id="toolbar" aria-label="搜索与筛选">
+      <div class="search-block">
+        <div class="searchbox">
+          <svg class="icon search-icon"><use href="#i-search"></use></svg>
+          <input id="searchInput" type="search" autocomplete="off" spellcheck="false" placeholder="搜索题干、选项、知识点…" aria-label="搜索题目">
+          <kbd>/</kbd>
+          <button class="search-clear" id="searchClear" aria-label="清空搜索" hidden><svg class="icon"><use href="#i-close"></use></svg></button>
+        </div>
+        <div class="search-hint" id="searchHint">支持题干、选项、年份、章节和知识点；多个关键词用空格分隔</div>
+      </div>
+      <div class="toolbar-controls">
+        <label class="select-wrap">
+          <span>年份</span>
+          <select id="yearSelect" aria-label="按年份筛选"></select>
+        </label>
+        <label class="select-wrap">
+          <span>排序</span>
+          <select id="sortSelect" aria-label="排序方式">
+            <option value="year-desc">年份：新 → 旧</option>
+            <option value="year-asc">年份：旧 → 新</option>
+            <option value="chapter">按教材章节</option>
+          </select>
+        </label>
+        <button class="reset-btn" id="resetBtn" aria-label="重置筛选"><svg class="icon"><use href="#i-reset"></use></svg><span>重置</span></button>
+      </div>
+      <div class="active-filters" id="activeFilters" hidden></div>
+    </section>
+
+    <div id="content" class="content"></div>
+
+    <footer class="site-foot">
+      <span>408 真题选择题典</span>
+      <span class="dot-sep"></span>
+      <span>2009—2026 · 720 题</span>
+      <span class="dot-sep"></span>
+      <span>按教材章节与知识点整理</span>
+    </footer>
+  </main>
+</div>
+
+<script src="data/questions.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
+
