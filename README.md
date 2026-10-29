@@ -1,6 +1,6 @@
 ﻿# 408 真题选择题典（2009—2026）
 
-在线访问：**https://chiyunxian.github.io/408-exam-quiz/**
+在线访问：**https://chiyunxian.github.io/408/**
 
 把 2009—2026 年 408 计算机学科专业基础综合的 **720 道单项选择题**，按四本教材、26 个章节和 58 个知识点整理成的一个可检索静态网站。
 
@@ -32,3 +32,4 @@
 ## 数据说明
 
 题目与答案按公开真题资料整理并交叉核对，参考了 [四〇八档案室](https://zhenti.beokayy.club/)、[N诺考研](https://noobdream.com/) 和 [408-exam-paper](https://github.com/neville-studio/408-exam-paper)。解析从略，仅保留答案和主知识点；公式、表格以纯文本/题图呈现，若有个别排版差异，以原卷为准。题目版权归原命题机构所有，仅供个人复习使用。
+
